@@ -5,3 +5,4 @@ O objetivo deste repositório é manter os arquivos Power BI sobre transformaç�
 Este projeto é composto pelos seguintes diretórios e arquivos: 
 
 * **Trello**: possui todos os arquivos utilizados para integração com Trello e demonstração de utilização;
+* **Custom_Visuals**: possui os custom visuals verificados;
