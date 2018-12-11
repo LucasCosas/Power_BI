@@ -1,0 +1,54 @@
+
+No Power BI, ir para GetData e escolher a conexão de Arquivo de Excel
+
+O Power BI encontrará, dentro do arquivo do Excel, algumas tabelas que podem ser utilizadas para carregar os dados dentro do modelo.
+
+Existem formatações de tabelas do Excel, range de dados ou abas inteiras do Excel
+
+Note que podemos clicar em alguma das tabelas e visualizar um preview dos dados que serão carregados.
+
+Neste caso, utilizaremos apenas as tabelas e range de dados:
+
+Na caixa de seleção, escolha DIM_Data, DIM_Produtos, FAT_VENDAS, FAT_COMPRAS (Segunda opção duplicada na lista), Vendedores e FAT_Target
+
+Após a carga de dados, vá na terceira opção no canto esquerdo do Power BI, onde vemos as relações entre as tabelas. Algumas delas o Power BI entende automaticamente, inclusive COD e ID.
+
+Navegue até "Editar Consultas"/"Edit Queries" no menu superior central, alguns dados de FAT_COMPRAS vieram com um formato diferente do necessário para a visualização
+
+Primeiramente, na consulta de FAT_COMPRAS, clique em "Use First Row as Headers", esse passo fará com que a primeira linha da tabela seja o nome das colunas.
+
+As linhas de valores vieram no formato de data e valor, o que não é interessante para agregar as métricas, portanto, selecione as duas primeiras colunas usando a tecla shift do teclado e procure pela opção "unpivot other columns" na segunda aba do menu superior do edit queries. ("Transformas outras colunas em linhas" em português). Após transformar as colunas em linhas, renomeie a coluna "atributo" para "data".
+
+A Consulta "Vendedores" deve ser renomeada para "DIM_Vendedores" para maior facilidade na criação das visualizações (modelo dimensional)
+
+Por fim, ainda na Edição de Consultas, duplicar a coluna "full_data" e chama-la de "DateTime". Modificar a coluna "full_data" da tabela "DIM_DATA" para textual. 
+
+Clique, no menu superior esquerdo, em fechar e aplicar. Após a nova carga de dados, vá até a aba de relações no menu esquerdo do Power BI, procure as tabelas de FAT_COMPRAS e DIM_DATA. Clique na coluna "full_data" da DIM_DATA e arraste até a coluna de data na FAT_COMPRAS.
+
+CRIANDO MÉTRICAS
+
+Volte para a primeira opção no menu da esquerda, na aba de visualizações
+
+Clique com o botão direito em "FAT_VENDAS" e escolha criar uma nova medida
+"Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])"
+
+Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: Arraste NM_Departamento para NM_Produto
+
+CRIAR VISUALIZAÇÕES:
+
+Na área de VISUALIZAÇÕES, escolha a visualização para colocar filtros, depois, procure a coluna DateTime da tabela DIM_DATA e selecione.
+
+Podemos visualizar o valor total de vendas por departamento, para isso:
+
+Selecione o gráfico de colunas empilhadas e linha.
+
+Escolha a medida calculada criada no passo anterior e coloque-a no campo de Valor. Em eixo, escolha NM_Departamento da tabela DIM_PRODUTOS.
+
+Na linha de trend, escolha a coluna Target_Value da tabela FAT_Target.
+
+Agora podemos mexer com o filtro de data para alterar a visualização criada.
+
+A partir daí, o céu é o limite.
+
+Descubra quem é o melhor vendedor por departamento, utilizando as tecnicas de visualização acima. Qual produto tem a maior venda? E qual tem o menor? Qual produto foi comprado mais do que vendido? 
+
