@@ -82,9 +82,22 @@ Descubra quem é o melhor vendedor por departamento, utilizando as tecnicas de vi
 
 ## Publicação e compartilhamento
 
-Clique em "Publicar" na página inicial do Power BI
-Logue
-Escolha o espaço de trabalho pessoal
-Clique em publicar novamente
-Abra o "msit.powerbi.com"
+Após criar as visualizações, clique em "Publicar" no menu inicial do Power BI
 
+Quando abrir a caixa de diálogo, coloque seu email corporativo e senha.
+
+Escolha o espaço de trabalho pessoal e publique.
+
+Clique no link para visualizar o relatório no site ou abra o "msit.powerbi.com"
+
+Na opção "Arquivo" podemos compartilhar este relatório na web ou SharePoint. Na opção "Compartilhar" podemos compartilhar com um grupo ou usuário específico.
+
+### Teams
+
+Abra o Teams na aba de teams. Escolha um time que gostaria de compartilhar o relatório criado e clique no sinal "+". Procure por Power BI na área de adicionar uma aba.	 Selecione o espaço de trabalho em que o relatório foi publicado e selecione-o.
+
+## Atualizando o relatório
+
+Por fim, para atualizar o relatório no site do Power BI, podemos navegar até o espaço de trabalho, na área esquerda, procurar por Data Sources/Conjuntos de Dados, clicar na reticências ao lado do conjunto de dados e clicar em "Atualizar Agora".
+
+Note que este passo só funcionará se o arquivo utilizado estiver em algum serviço online como SharePoint. Se estiver na máquina física, será necessário publica-lo novamente a partir do Power BI Desktop ou criar um gateway(não recomendável).
