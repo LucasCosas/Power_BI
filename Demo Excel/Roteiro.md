@@ -45,7 +45,7 @@ A Consulta "Vendedores" deve ser renomeada para "DIM_Vendedores" para maior faci
 
 Na tabela de datas temos uma coluna chamada "full_data" que está em modo de data. Este tipo de formatação o Power BI entende internamente como "MM/dd/aaaa hh:mm:ss", o que faz com que algumas ligações com colunas textuais (o caso da ligação da tabela FAT_COMPRAS) se comprometa, portanto, é necessário modifica-la, mas sem perder uma coluna do tipo Date:
 
-Na consulda de DIM_DATA, duplicar a coluna "full_data" e chama-la de "DateTime". Modificar a coluna "full_data" para textual. 
+Na consulda de DIM_DATA, duplicar a coluna "full_data" e chama-la de "DateTime". Modificar a coluna "full_data" para textual, para isso, clique com o botão direito > "change type" > text. 
 
 ## Relationship (relação entre as tabelas)
 
@@ -58,19 +58,19 @@ Volte para a primeira opção no menu da esquerda, na aba de visualizações
 Clique com o botão direito em "FAT_VENDAS" e escolha criar uma nova medida
 "Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])"
 
-Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: Arraste NM_Departamento para NM_Produto
+Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: Arraste NM_Produto para Nome_Departamento da tabela DIM_PRODUTOS
 
 ## Visualizações
 
-Na área de VISUALIZAÇÕES (volte para a primeira opção no menu da esquerda no Power BI), escolha a visualização para colocar filtros (a primeira da 5ª coluna), depois, procure a coluna DateTime da tabela DIM_DATA e selecione o checkbox.
+Na área de VISUALIZAÇÕES, escolha a visualização para colocar filtros (a primeira da 5ª linha), depois, procure a coluna DateTime da tabela DIM_DATA e selecione o checkbox.
 
 Podemos visualizar o valor total de vendas por departamento, para isso:
 
 Selecione o gráfico de colunas empilhadas e linha.
 
-Escolha a medida calculada criada no passo anterior e coloque-a no campo de Valor. Em eixo, escolha NM_Departamento da tabela DIM_PRODUTOS.
+Escolha a medida calculada criada no passo anterior (Valor da nota) e coloque-a no campo de Valor(coluna). Em eixo, escolha a hierarquia criada da tabela DIM_PRODUTOS.
 
-Na linha de trend, escolha a coluna Target_Value da tabela FAT_Target.
+Na linha de valor, escolha a coluna Target_Value da tabela FAT_Target.
 
 Agora podemos mexer com o filtro de data para alterar a visualização criada.
 
