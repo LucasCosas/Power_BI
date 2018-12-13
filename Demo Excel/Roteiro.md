@@ -28,6 +28,7 @@ Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, 
 Navegue até "Editar Consultas"/"Edit Queries" no menu superior central, alguns dados de FAT_COMPRAS vieram com um formato diferente do necessário para a visualização
 
 * FAT_COMPRAS 
+
 Note que as colunas da "FAT_COMPRAS" vieram com nomes Coluna1, Coluna2... e a primeira linha da tabela é o nome de cada uma das colunas, portanto, na consulta de FAT_COMPRAS, clique em "Use First Row as Headers", esse passo fará com que a primeira linha da tabela substitua o nome das colunas e apague esta linha da tabela.
 
 As colunas da tabela são as datas em que temos compras. Estas colunas deveriam, na verdade, ser linhas, pois para fazer cálculos, utiliza-se a coluna inteira, verticais, e não horizontais, portanto, selecione as duas primeiras colunas usando a tecla shift do teclado e procure pela opção "unpivot other columns" na segunda aba do menu superior do edit queries. ("Transformas outras colunas em linhas" em português). Após transformar as colunas em linhas, renomeie a coluna "atributo" para "data".
