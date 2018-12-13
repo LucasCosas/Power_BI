@@ -39,7 +39,7 @@ Agora temos uma coluna de data e outra de valor, de forma que cada data tenha um
 
 A Consulta "Vendedores" deve ser renomeada para "DIM_Vendedores" para maior facilidade na criação das visualizações (modelo dimensional)
 
-*DIM_DATA 
+* DIM_DATA 
 
 Na tabela de datas temos uma coluna chamada "full_data" que está em modo de data. Este tipo de formatação o Power BI entende internamente como "MM/dd/aaaa hh:mm:ss", o que faz com que algumas ligações com colunas textuais (o caso da ligação da tabela FAT_COMPRAS) se comprometa, portanto, é necessário modifica-la, mas sem perder uma coluna do tipo Date:
 
