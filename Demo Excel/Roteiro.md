@@ -16,10 +16,12 @@ Na caixa de seleção, escolha:
 
 * *DIM_Data*
 * *DIM_Produtos*
+* *FAT_Target*
 * *FAT_VENDAS*
 * *FAT_COMPRAS* (Segunda opção duplicada na lista)
 * *Vendedores* 
-* *FAT_Target*
+
+Clique em "Load"/"Carregar" após selecionar as tabelas acima.
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. Algumas delas o Power BI entende automaticamente, inclusive COD e ID.
 
@@ -27,19 +29,19 @@ Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, 
 
 Navegue até "Editar Consultas"/"Edit Queries" no menu superior central, alguns dados de FAT_COMPRAS vieram com um formato diferente do necessário para a visualização
 
-* FAT_COMPRAS 
+### FAT_COMPRAS 
 
-Note que as colunas da "FAT_COMPRAS" vieram com nomes Coluna1, Coluna2... e a primeira linha da tabela é o nome de cada uma das colunas, portanto, na consulta de FAT_COMPRAS, clique em "Use First Row as Headers", esse passo fará com que a primeira linha da tabela substitua o nome das colunas e apague esta linha da tabela.
+Note que as colunas da "FAT_COMPRAS" vieram com nomes Coluna1, Coluna2... e a primeira linha da tabela é o nome de cada uma das colunas, portanto, na consulta de FAT_COMPRAS, clique em "Use First Row as Headers" na seção "Transform" do menu superior, esse passo fará com que a primeira linha da tabela substitua o nome das colunas e apague esta linha da tabela.
 
 As colunas da tabela são as datas em que temos compras. Estas colunas deveriam, na verdade, ser linhas, pois para fazer cálculos, utiliza-se a coluna inteira, verticais, e não horizontais, portanto, selecione as duas primeiras colunas usando a tecla shift do teclado e procure pela opção "unpivot other columns" na segunda aba do menu superior do edit queries. ("Transformas outras colunas em linhas" em português). Após transformar as colunas em linhas, renomeie a coluna "atributo" para "data".
 
 Agora temos uma coluna de data e outra de valor, de forma que cada data tenha um valor atribuído na linha e não em várias colunas como estava da maneira antiga. Se desejar ver a transformação, na aba "steps"/"passos" no canto direito da consulta, navegue entre os passos para entender.
 
-* Vendedores
+### Vendedores
 
 A Consulta "Vendedores" deve ser renomeada para "DIM_Vendedores" para maior facilidade na criação das visualizações (modelo dimensional)
 
-* DIM_DATA 
+### DIM_DATA 
 
 Na tabela de datas temos uma coluna chamada "full_data" que está em modo de data. Este tipo de formatação o Power BI entende internamente como "MM/dd/aaaa hh:mm:ss", o que faz com que algumas ligações com colunas textuais (o caso da ligação da tabela FAT_COMPRAS) se comprometa, portanto, é necessário modifica-la, mas sem perder uma coluna do tipo Date:
 
