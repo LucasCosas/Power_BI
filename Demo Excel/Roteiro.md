@@ -62,23 +62,32 @@ Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma t
 
 ## Visualizações
 
+### Objetivos da visualização:
+
+Descubra quem é o melhor vendedor com filtro de departamento e de data.
+Qual produto tem a maior venda? E qual tem o menor?
+
+
+### Criar visualização
+
 Na área de VISUALIZAÇÕES, escolha a visualização para colocar filtros (a primeira da 5ª linha), depois, procure a coluna DateTime da tabela DIM_DATA e selecione o checkbox.
 
-Podemos visualizar o valor total de vendas por departamento, para isso:
+Clique fora da visualização criada e adicione um novo filtro, com NM_Departamento desta vez.
 
-Selecione o gráfico de colunas empilhadas e linha.
+Selecione o gráfico de colunas empilhadas.
 
-Escolha a medida calculada criada no passo anterior (Valor da nota) e coloque-a no campo de Valor(coluna). Em eixo, escolha a hierarquia criada da tabela DIM_PRODUTOS.
+Escolha a medida calculada criada no passo anterior (Valor da nota) e coloque-a no campo de Valor(coluna). No campo de eixo, adicione o nome dos vendedores da tabela DIM_Vendedores.
+
+Com os passos acima podemos filtrar datas e departamentos para descobrir quem vendeu mais nas datas e departamentos escolhidos.
+
+Adicione outro gráfico de colunas, dessa vez o gráfico de colunas empilhadas e linha. Selecione valor da nota e nm_produto.
 
 Na linha de valor, escolha a coluna Target_Value da tabela FAT_Target.
 
-Agora podemos mexer com o filtro de data para alterar a visualização criada.
+Agora podemos mexer com o filtro de data para alterar as visualizações criadas.
 
 A partir daí, o céu é o limite.
 
-## Objetivos da visualização
-
-Descubra quem é o melhor vendedor por departamento, utilizando as tecnicas de visualização acima. Qual produto tem a maior venda? E qual tem o menor? Qual produto foi comprado mais do que vendido? 
 
 ## Publicação e compartilhamento
 
