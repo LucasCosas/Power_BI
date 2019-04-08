@@ -4,7 +4,7 @@
 
 No Power BI, ir para GetData e escolher a conexão de Arquivo de Excel
 
-![Caption for the picture.](/images/getdata.png)
+![Caption for the picture.](./images/getdata.png)
 
 
 O Power BI encontrará, dentro do arquivo do Excel, algumas tabelas que podem ser utilizadas para carregar os dados dentro do modelo.
