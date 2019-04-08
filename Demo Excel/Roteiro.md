@@ -22,12 +22,8 @@ Neste caso, utilizaremos apenas os dados formatados como tabelas dentro do arqui
 
 Na caixa de seleção, escolha:
 
-* *DIM_Data*
-* *DIM_Produtos*
-* *FAT_Target*
-* *FAT_VENDAS*
-* *FAT_COMPRAS* (Segunda opção duplicada na lista)
-* *Vendedores* 
+* *Vendas*
+* *Budget* 
 
 ![tabelasexcel.](./images/tabelasexcel.png)
 
@@ -35,20 +31,12 @@ Na caixa de seleção, escolha:
 Clique em "Load"/"Carregar" após selecionar as tabelas acima.
 
 
+Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
 
-## TODO 1: Atualizar as tabelas que serão importadas na demo
-
-
-
-
-
-
+A relação entre as tabelas foi identificada automaticamente pelo campo Owner
 
 
 ## TODO 2: Revisar a demo abaixo
-
-
-Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. Algumas delas o Power BI entende automaticamente, inclusive COD e ID.
 
 ## Edit Queries (Editar Consultas)
 
