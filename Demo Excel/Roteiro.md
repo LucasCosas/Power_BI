@@ -2,24 +2,23 @@
 
 ## Get Data (Obter Dados)
 
-Para o workshop, primeiramente navegue até o link https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/_OLD/Dados.xlsx.
+Para o workshop, primeiramente navegue até o link abaixo
+https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/_OLD/Dados.xlsx.
 
-Salve o arquivo de excel no diretório C:/ArquivoExcel
+Clique em "Download" e salve o arquivo de excel no diretório C:/ArquivoExcel
 
 No Power BI Desktop, ir para GetData e escolha a conexão de Arquivo de Excel
 
 ![GetData.](./images/getdata.png)
 ![GetDataExcel.](./images/getdataexcel.png)
 
-Procure a tabela de Excel na sua máquina.
+Procure a tabela de Excel no diretório salvo no passo anterior.
 
 O Power BI encontrará, dentro do arquivo do Excel, algumas tabelas que podem ser utilizadas para carregar os dados dentro do modelo.
 
-Existem formatações de tabelas do Excel, range de dados ou abas inteiras do Excel
-
 Note que podemos clicar em alguma das tabelas e visualizar um preview dos dados que serão carregados.
 
-Neste caso, utilizaremos apenas as tabelas e range de dados:
+Neste caso, utilizaremos apenas os dados formatados como tabelas dentro do arquivo excel:
 
 Na caixa de seleção, escolha:
 
@@ -30,7 +29,23 @@ Na caixa de seleção, escolha:
 * *FAT_COMPRAS* (Segunda opção duplicada na lista)
 * *Vendedores* 
 
+![tabelasexcel.](./images/tabelasexcel.png)
+
+## TODO 1: Atualizar as tabelas que serão importadas na demo
+
 Clique em "Load"/"Carregar" após selecionar as tabelas acima.
+
+
+
+
+
+
+
+
+
+
+## TODO 2: Revisar a demo abaixo
+
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. Algumas delas o Power BI entende automaticamente, inclusive COD e ID.
 
