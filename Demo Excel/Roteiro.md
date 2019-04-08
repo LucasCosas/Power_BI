@@ -35,7 +35,7 @@ Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, 
 
 A relação entre as tabelas foi identificada automaticamente pelo campo Owner, conforme imagem abaixo
 
-![relationship.](./images/relationship.png)
+![relationships.](./images/relationships.png)
 
 ## TODO 2: Revisar a demo abaixo
 
