@@ -2,10 +2,16 @@
 
 ## Get Data (Obter Dados)
 
-No Power BI, ir para GetData e escolher a conexão de Arquivo de Excel
+Para o workshop, primeiramente navegue até o link https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/_OLD/Dados.xlsx.
 
-![Caption for the picture.](./images/getdata.png)
+Salve o arquivo de excel no diretório C:/ArquivoExcel
 
+No Power BI Desktop, ir para GetData e escolha a conexão de Arquivo de Excel
+
+![GetData.](./images/getdata.png)
+![GetDataExcel.](./images/getdataexcel.png)
+
+Procure a tabela de Excel na sua máquina.
 
 O Power BI encontrará, dentro do arquivo do Excel, algumas tabelas que podem ser utilizadas para carregar os dados dentro do modelo.
 
