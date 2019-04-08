@@ -31,11 +31,12 @@ Na caixa de seleção, escolha:
 
 ![tabelasexcel.](./images/tabelasexcel.png)
 
-## TODO 1: Atualizar as tabelas que serão importadas na demo
 
 Clique em "Load"/"Carregar" após selecionar as tabelas acima.
 
 
+
+## TODO 1: Atualizar as tabelas que serão importadas na demo
 
 
 
