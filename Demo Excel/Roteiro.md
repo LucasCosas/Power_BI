@@ -62,7 +62,7 @@ Clique com o botão direito em "VENDAS" e escolha criar uma nova medida
 
 Copie o código abaixo na aba que aparecer:
 
-Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])
+> Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])
 
 
 Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: 
