@@ -51,7 +51,7 @@ Clique em "Editar" após selecionar as tabelas acima.
 
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
-
+## TODO 2: arrumar as identificações automáticas abaixo
 A relação entre as tabelas foi identificada automaticamente pelo campo Owner, conforme imagem abaixo
 
 ![relationshipscopy.](./images/relationshipscopy.png)
