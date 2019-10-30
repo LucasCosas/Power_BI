@@ -1,5 +1,17 @@
 # Power BI - Passo a Passo para demonstração
 
+## Configurar Power BI
+
+Antes de começarmos, importante certificar de que o Power BI está em Português Brasileiro para o passo a passo abaixo.
+
+Para isso, vá a File > Opções e Configurações > Opções
+
+![GetConfig.](./images/options.png)
+
+Verifique na aba Configurações Regionais se o idioma está em Português Brasileiro.
+
+![GetConfigreg.](./images/configreg.png)
+
 ## Get Data (Obter Dados)
 
 Para o workshop, primeiramente navegue até o link abaixo
@@ -7,7 +19,7 @@ https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/_OLD/Dados.xlsx.
 
 Clique em "Download" e salve o arquivo de excel no diretório C:/ArquivoExcel
 
-No Power BI Desktop, ir para GetData e escolha a conexão de Arquivo de Excel
+No Power BI Desktop, vá para GetData e escolha a conexão de Arquivo de Excel
 
 ![GetData.](./images/getdata.png)
 ![GetDataExcel.](./images/getdataexcel.png)
