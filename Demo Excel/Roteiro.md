@@ -56,10 +56,18 @@ A relação entre as tabelas foi identificada automaticamente pelo campo Owner, co
 
 Volte para a primeira opção no menu da esquerda, na aba de visualizações
 
-Clique com o botão direito em "FAT_VENDAS" e escolha criar uma nova medida
-"Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])"
+Clique com o botão direito em "VENDAS" e escolha criar uma nova medida
 
-Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: Arraste NM_Produto para Nome_Departamento da tabela DIM_PRODUTOS
+![vendasmedida.](./images/vendasmedida.png)
+
+Copie o código abaixo na aba que aparecer:
+
+Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])
+
+
+Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: 
+
+Arraste NM_Produto para Nome_Departamento da tabela PRODUTOS
 
 ## Visualizações
 
