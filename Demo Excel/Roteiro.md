@@ -34,13 +34,20 @@ Neste caso, utilizaremos apenas os dados formatados como tabelas dentro do arqui
 
 Na caixa de seleção, escolha:
 
-* *Vendas*
-* *Budget* 
+* *Localizacao*
+* *Fabricante*
+* *Vendas* 
+* *Produtos*
+
 
 ![tabelasexcel.](./images/tabelasexcel.png)
 
 
-Clique em "Load"/"Carregar" após selecionar as tabelas acima.
+Clique em "Editar" após selecionar as tabelas acima.
+
+## TODO 1: Edit Queries
+
+
 
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
