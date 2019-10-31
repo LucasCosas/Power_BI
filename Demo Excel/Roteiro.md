@@ -45,7 +45,9 @@ Na caixa de seleção, escolha:
 
 Clique em "Editar" após selecionar as tabelas acima.
 
-# Edit Queries / Editar Consultas
+# Edit Queries (Editar Consultas)
+
+Editar Consultas é o lugar onde você fará as edições nas tabelas que serão feitas as cargas para o modelo do Power BI. É importante fazer as modificações necessárias antes da criaçao das visualizações.
 
 ### Tabela Vendas
 
