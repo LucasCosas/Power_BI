@@ -59,7 +59,7 @@ Date: Alterar para Data.
 Valor Base: Decimal Fixo.
 Valor da Venda: Decimal Fixo.
 
-# Tabela Localização
+### Tabela Localização
 
 Selecione a tabela Endereço. Na aba Transformar do menu superior, escolha Dividir Coluna por Delimitador
 
