@@ -61,7 +61,6 @@ Para alterar, clique no símbolo que aparece ao lado esquerdo da coluna, exemplo 
 
 Date: Alterar para Data.
 Valor Base: Decimal Fixo.
-Valor da Venda: Decimal Fixo.
 
 ### Tabela Localização
 
@@ -110,33 +109,57 @@ Resultado esperado:
 
 ![relacionamento.](./images/relacionamento.png)
 
-
 # Measures (medidas) e Hierarquias
 
 Volte para a primeira opção no menu da esquerda, na aba de visualizações
 
-Clique com o botão direito em "VENDAS" e escolha criar uma nova medida
+Clique com o botão direito na tabela "Vendas" e escolha criar uma "Nova Coluna"
 
-![vendasmedida.](./images/vendasmedida.png)
+![vendascol.](./images/vendascol.png)
 
 Copie o código abaixo na aba que aparecer:
 
-> Valor da Nota = sum(FAT_Vendas[Preco])*sum(FAT_Vendas[Quantidade_Vendida])
+> Valor da Nota = Vendas[Valor Base] * Vendas[Unidades]
+
+Isso criará uma Coluna na tabela, que multiplica a quantidade de unidades vendida pelo valor base de cada unidade, resultando no preço final da Nota.
+
+Para criar uma nova Medida, clique com o botão direito na tabela Vendas e "Nova Medida".
+
+Copie o código abaixo e cole na aba que aparecer:
+
+> Valor Total de Vendas = Vendas[Valor da Nota]
+
+Isso criará uma medida que agrega todos os valores das notas, para calcular o valor total das vendas num determinado período ou por um produto específico.
 
 
 Para criar uma hierarquia, basta arrastar uma coluna em outra, dentro da mesma tabela: 
 
-Arraste NM_Produto para Nome_Departamento da tabela PRODUTOS
+Na tabela Produtos, arraste Produto para Fabricante, criando uma hierarquia entre Fabricante > Produto.
 
-## Visualizações
+![hierarquia.](./images/hierarquia.png)
 
-### Objetivos da visualização:
+Para o Power BI então qual o tipo da coluna de localização, precisaremos colocar labels em cada coluna:
+
+Na tabela Localização, clique na coluna CEP, procure por Categoria de dados e selecione CEP na lista suspensa:
+
+![cep.](./images/cep.png)
+
+Faça o mesmo para as seguintes colunas:
+
+Cidade: Cidade
+Estado: Estado ou Província
+País: País/Região
+
+
+# Visualizações
+
+## Objetivos da visualização:
 
 Descubra quem é o melhor vendedor com filtro de departamento e de data.
 Qual produto tem a maior venda? E qual tem o menor?
 
 
-### Criar visualização
+## Criar visualização
 
 Na área de VISUALIZAÇÕES, escolha a visualização para colocar filtros (a primeira opção da 5ª linha, da área de visualizações), depois, procure a coluna DateTime da tabela DIM_DATA e selecione o checkbox.
 
@@ -157,7 +180,7 @@ Agora podemos modificar com o filtro de data para alterar as visualizações criad
 A partir daí, o céu é o limite.
 
 
-## Publicação e compartilhamento
+# Publicação e compartilhamento
 
 Após criar as visualizações, clique em "Publicar" no menu inicial do Power BI
 
@@ -169,11 +192,11 @@ Clique no link para visualizar o relatório no site ou abra o "msit.powerbi.com"
 
 Na opção "Arquivo" podemos compartilhar este relatório na web ou SharePoint. Na opção "Compartilhar" podemos compartilhar com um grupo ou usuário específico.
 
-### Teams
+## Teams
 
 Abra o Teams na aba de teams. Escolha um time que gostaria de compartilhar o relatório criado e clique no sinal "+". Procure por Power BI na área de adicionar uma aba.	 Selecione o espaço de trabalho em que o relatório foi publicado e selecione-o.
 
-## Atualizando o relatório
+# Atualizando o relatório
 
 Por fim, para atualizar o relatório no site do Power BI, podemos navegar até o espaço de trabalho, na área esquerda, procurar por Data Sources/Conjuntos de Dados, clicar na reticências ao lado do conjunto de dados e clicar em "Atualizar Agora".
 
