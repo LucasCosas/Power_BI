@@ -99,7 +99,7 @@ A relação entre as tabelas foi identificada automaticamente pelo campo Owner, co
 
 ![relationshipscopy.](./images/relationshipscopy.png)
 
-## TODO 2: Revisar a demo abaixo
+## TODO 3: Revisar a demo abaixo
 
 
 ## Measures (medidas) e Hierarquias
