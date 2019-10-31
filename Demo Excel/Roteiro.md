@@ -98,7 +98,7 @@ Na página principal do Power BI, escolha a terceira opção do menu lateral esquer
 
 As relações entre as tabelas foi identificada automaticamente pelo campo CEP e ID do Produto, conforme imagem abaixo
 
-![relationshipscopy.](./images/relationshipscopy.png)
+![relationshipspower.](./images/relationshipspower.png)
 
 Porém, a relação entre Fabricante e Produtos não foi identificada. Para tanto, podemos fazê-la de duas formas diferentes:
 
