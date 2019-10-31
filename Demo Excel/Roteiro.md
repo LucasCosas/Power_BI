@@ -85,9 +85,14 @@ A Tabela ficará parecida com isso:
 
 ![fabricante.](./images/fabricante.png)
 
-Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
+Volte para a Aba "Página Inicial" no menu superior e clique em "Fechar e Aplicar"
+
+Isso fará com que as Mudanças nas Consultas sejam aplicadas no Modelo para visualizações.
 
 ## TODO 2: arrumar as identificações automáticas abaixo
+
+# Relacionamento das Tabelas
+
 A relação entre as tabelas foi identificada automaticamente pelo campo Owner, conforme imagem abaixo
 
 ![relationshipscopy.](./images/relationshipscopy.png)
