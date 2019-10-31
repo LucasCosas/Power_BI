@@ -153,32 +153,41 @@ Faça o mesmo para as seguintes colunas:
 
 # Visualizações
 
-## Objetivos da visualização:
-
-Descubra quem é o melhor vendedor com filtro de departamento e de data.
-Qual produto tem a maior venda? E qual tem o menor?
-
-
 ## Criar visualização
 
-Na área de VISUALIZAÇÕES, escolha a visualização para colocar filtros (a primeira opção da 5ª linha, da área de visualizações), depois, procure a coluna DateTime da tabela DIM_DATA e selecione o checkbox.
+Escolha a visualização de mapa na área de Visualizações:
 
-Clique fora da visualização criada e adicione um novo filtro, com NM_Departamento desta vez.
+![maps.](./images/maps.png)
 
-Clique novamente fora da visualização criada acima e selecione o gráfico de colunas empilhadas.
+Clique na coluna País da tabela Localização e arraste até o campo Localização da visualização de mapa selecionada:
 
-Escolha a medida calculada criada no passo anterior (Valor da nota) e coloque-a no campo de Valor(coluna), se apenas clicar no checkbox, o Power BI entende essa coluna como numérica e faz isso por você. No campo de eixo, adicione o nome dos vendedores da tabela DIM_Vendedores. Novamente, apenas clicar no checkbox funciona automaticamente.
+![localizacaomapa.](./images/localizacaomapa.png)
 
-Com os passos acima podemos filtrar datas e departamentos para descobrir quem vendeu mais nas datas e departamentos escolhidos.
+Faça o mesmo com Estado e Cidade, arrastando para baixo de "País" no campo de Localização.
 
-Adicione outro gráfico de colunas, desta vez, o gráfico de colunas empilhadas e linha. Selecione valor da nota e nm_produto.
+No campo "Tamanho", coloque a coluna que criamos "Valor da Nota". Isso fará com que as localizações mais vendidas tenham bolas maiores
 
-Na linha de valor, escolha a coluna Target_Value da tabela FAT_Target.
+Adicione um filtro para Datas, selecionando "Segmentação de Dados" e o campo Date da tabela Vendas
 
-Agora podemos modificar com o filtro de data para alterar as visualizações criadas.
+![filter.](./images/filter.png)
 
-A partir daí, o céu é o limite.
+Adicione o Cartão e coloque Valor da Nota como Campo.
 
+Coloque um Gráfico de Rosca e em Legenda, adicione Categorias, em valores "Valor da Nota"
+
+Adicione mais um filtro (Segmentação de dados) para Fabricante.
+
+Clique em gráfico de barras empilhadas e adicione os campos de Produto da tabela Produtos e Valor de Nota da tabela Vendas. Esta visualização virá com muitos valores, filtraremos os 10 maiores:
+
+Ranking top 10:
+
+* Com a visualização do gráfico selecionada, arraste o filtro Produto para o campo "Filtros neste Visual" na aba Filtros. 
+* em Tipo de Filtro, mude para N superior. Coloque o valor "10" em mostrar itens > Superior.
+* em "Por Valor" adicione Valor da Nota e clique em aplicar.
+
+Exemplo abaixo contendo o filtro de ranking e algumas visualizações possíveis
+
+![top10.](./images/top10.png)
 
 # Publicação e compartilhamento
 
