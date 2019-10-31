@@ -43,7 +43,9 @@ Na caixa de seleção, escolha:
 ![tabelasexcel.](./images/tabelasexcel.png)
 
 
-Clique em "Editar" após selecionar as tabelas acima.
+Clique em "Transformar Dados" após selecionar as tabelas acima. 
+
+Caso as tabelas já estejam carregadas, pode-se ir ao menu de edições clicando em Editar Consultas do menu superior na página principal do Power BI
 
 # Edit Queries (Editar Consultas)
 
