@@ -146,9 +146,9 @@ Na tabela Localização, clique na coluna CEP, procure por Categoria de dados e se
 
 Faça o mesmo para as seguintes colunas:
 
-Cidade: Cidade
-Estado: Estado ou Província
-País: País/Região
+** * Cidade: Cidade *
+** * Estado: Estado ou Província *
+** * País: País/Região *
 
 
 # Visualizações
