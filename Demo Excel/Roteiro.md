@@ -91,18 +91,25 @@ Volte para a Aba "Página Inicial" no menu superior e clique em "Fechar e Aplicar
 
 Isso fará com que as Mudanças nas Consultas sejam aplicadas no Modelo para visualizações.
 
-## TODO 2: arrumar as identificações automáticas abaixo
 
 # Relacionamento das Tabelas
 
-A relação entre as tabelas foi identificada automaticamente pelo campo Owner, conforme imagem abaixo
+Na página principal do Power BI, escolha a terceira opção do menu lateral esquerdo, para ver as relações entre as tabelas.
+
+As relações entre as tabelas foi identificada automaticamente pelo campo CEP e ID do Produto, conforme imagem abaixo
 
 ![relationshipscopy.](./images/relationshipscopy.png)
 
-## TODO 3: Revisar a demo abaixo
+Porém, a relação entre Fabricante e Produtos não foi identificada. Para tanto, podemos fazê-la de duas formas diferentes:
+
+A primeira é simplesmente clicar no campo "ManufacturerID" e arrasta-lo até "Fabricante - No".
+
+Outra forma, no menu superior, procurar por "Gerenciar Relações" e criar a nova relação na caixa de diálogo.
+
+![relacionamento.](./images/relacionamento.png)
 
 
-## Measures (medidas) e Hierarquias
+# Measures (medidas) e Hierarquias
 
 Volte para a primeira opção no menu da esquerda, na aba de visualizações
 
