@@ -96,7 +96,7 @@ Isso fará com que as Mudanças nas Consultas sejam aplicadas no Modelo para visua
 
 Na página principal do Power BI, escolha a terceira opção do menu lateral esquerdo, para ver as relações entre as tabelas.
 
-As relações entre as tabelas foi identificada automaticamente pelo campo CEP e ID do Produto, conforme imagem abaixo
+As relações entre as tabelas foi identificada automaticamente pelo campo CEP (Localização) e ID (Produto), conforme imagem abaixo
 
 ![relationshipspower.](./images/relationshipspower.png)
 
@@ -105,6 +105,8 @@ Porém, a relação entre Fabricante e Produtos não foi identificada. Para tanto, p
 A primeira é simplesmente clicar no campo "ManufacturerID" e arrasta-lo até "Fabricante - No".
 
 Outra forma, no menu superior, procurar por "Gerenciar Relações" e criar a nova relação na caixa de diálogo.
+
+Resultado esperado:
 
 ![relacionamento.](./images/relacionamento.png)
 
