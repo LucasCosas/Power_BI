@@ -73,7 +73,17 @@ Renomeie a coluna Endereço.1 para Cidade e Endereço.2 para Estado. Clique com o 
 
 ### Tabela Fabricante 
 
+A coluna Fabricante está num formato onde as colunas são as linhas, portanto, precisamos transpor os dados.
 
+Na aba de Transformação, clique em Transpor:
+
+![transpor.](./images/transpor.png)
+
+Clique também em "Usar a Primeira Linha como Cabeçalho".
+
+A Tabela ficará parecida com isso:
+
+![fabricante.](./images/fabricante.png)
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
 
