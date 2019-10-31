@@ -30,7 +30,7 @@ O Power BI encontrará, dentro do arquivo do Excel, algumas tabelas que podem ser
 
 Note que podemos clicar em alguma das tabelas e visualizar um preview dos dados que serão carregados.
 
-Neste caso, utilizaremos apenas os dados formatados como tabelas dentro do arquivo excel:
+Neste caso, utilizaremos apenas os dados formatados nas abas dentro do arquivo excel:
 
 Na caixa de seleção, escolha:
 
@@ -47,10 +47,33 @@ Clique em "Editar" após selecionar as tabelas acima.
 
 ## TODO 1: Edit Queries
 
+# Tabela Vendas
 
+Alterar os tipos de dados das colunas:
+
+Para alterar, clique no símbolo que aparece ao lado esquerdo da coluna, exemplo abaixo.
+
+![alterandodate.](./images/alterandodate.png)
+
+Date: Alterar para Data.
+Valor Base: Decimal Fixo.
+Valor da Venda: Decimal Fixo.
+
+# Tabela Localização
+
+Selecione a tabela Endereço. Na aba Transformar do menu superior, escolha Dividir Coluna por Delimitador
+
+![delimitador.](./images/delimitador.png)
+
+Na tela que abrir, escolha delimitador de vírgula e clique OK.
+
+Renomeie a coluna Endereço.1 para Cidade e Endereço.2 para Estado. Clique com o botão direito em cima do nome da coluna para renomea-la.
+
+# Tabela Fabricante 
 
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
+
 ## TODO 2: arrumar as identificações automáticas abaixo
 A relação entre as tabelas foi identificada automaticamente pelo campo Owner, conforme imagem abaixo
 
