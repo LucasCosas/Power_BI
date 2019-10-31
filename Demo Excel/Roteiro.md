@@ -47,7 +47,7 @@ Clique em "Editar" após selecionar as tabelas acima.
 
 ## TODO 1: Edit Queries
 
-# Tabela Vendas
+### Tabela Vendas
 
 Alterar os tipos de dados das colunas:
 
@@ -69,7 +69,8 @@ Na tela que abrir, escolha delimitador de vírgula e clique OK.
 
 Renomeie a coluna Endereço.1 para Cidade e Endereço.2 para Estado. Clique com o botão direito em cima do nome da coluna para renomea-la.
 
-# Tabela Fabricante 
+### Tabela Fabricante 
+
 
 
 Após a carga de dados, vá na terceira opção no menu canto esquerdo do Power BI, onde vemos as relações entre as tabelas. 
