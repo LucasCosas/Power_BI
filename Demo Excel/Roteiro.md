@@ -45,7 +45,7 @@ Na caixa de seleção, escolha:
 
 Clique em "Editar" após selecionar as tabelas acima.
 
-## TODO 1: Edit Queries
+# Edit Queries / Editar Consultas
 
 ### Tabela Vendas
 
