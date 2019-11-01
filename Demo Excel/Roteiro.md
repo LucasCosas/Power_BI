@@ -15,7 +15,7 @@ Verifique na aba Configurações Regionais se o idioma está em Português Brasileir
 ## Get Data (Obter Dados)
 
 Para o workshop, primeiramente navegue até o link abaixo
-https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/_OLD/Dados.xlsx.
+https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/file/Dados.xlsx
 
 Clique em "Download" e salve o arquivo de excel no diretório C:/ArquivoExcel
 
