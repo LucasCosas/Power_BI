@@ -19,7 +19,7 @@ https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/file/Dados.xlsx
 
 Clique em "Download" e salve o arquivo de excel no diretório C:/ArquivoExcel
 
-No Power BI Desktop, vá para GetData e escolha a conexão de Arquivo de Excel
+No Power BI Desktop, vá para Obter Dados e escolha a conexão de Arquivo de Excel
 
 ![GetData.](./images/getdata.png)
 ![GetDataExcel.](./images/getdataexcel.png)
@@ -86,7 +86,7 @@ A Tabela ficará parecida com isso:
 
 ![fabricante.](./images/fabricante.png)
 
-Volte para a Aba "Página Inicial" no menu superior e clique em "Fechar e Aplicar"
+Volte para a Aba "Página Inicial" (ou "Base") no menu superior e clique em "Fechar e Aplicar"
 
 Isso fará com que as Mudanças nas Consultas sejam aplicadas no Modelo para visualizações.
 
@@ -109,7 +109,7 @@ Resultado esperado:
 
 ![relacionamento.](./images/relacionamento.png)
 
-# Parte 4 - Measures (medidas) e Hierarquias
+# Parte 4 - Measures (medidas) e Hierarchies (hierarquias)
 
 Volte para a primeira opção no menu da esquerda, na aba de visualizações
 
@@ -127,7 +127,7 @@ Para criar uma nova Medida, clique com o botão direito na tabela Vendas e "Nova 
 
 Copie o código abaixo e cole na aba que aparecer:
 
-> Valor Total de Vendas = Vendas[Valor da Nota]
+> Valor Total de Vendas = sum(Vendas[Valor da Nota])
 
 Isso criará uma medida que agrega todos os valores das notas, para calcular o valor total das vendas num determinado período ou por um produto específico.
 
@@ -140,14 +140,14 @@ Na tabela Produtos, arraste Produto para Fabricante, criando uma hierarquia entr
 
 Para o Power BI então qual o tipo da coluna de localização, precisaremos colocar labels em cada coluna:
 
-Na tabela Localização, clique na coluna CEP, procure por Categoria de dados e selecione CEP na lista suspensa:
+Na tabela Localização, clique na coluna CEP, procure por Categoria de dados e selecione CEP(Código Postal) na lista suspensa:
 
 ![cep.](./images/cep.png)
 
 Faça o mesmo para as seguintes colunas:
 
 * *Cidade: Cidade*
-* *Estado: Estado ou Província*
+* *Estado: Estado ou Província (Distrito)*
 * *País: País/Região*
 
 
@@ -177,7 +177,7 @@ Coloque um Gráfico de Rosca e em Legenda, adicione Categorias, em valores "Valor
 
 Adicione mais um filtro (Segmentação de dados) para Fabricante.
 
-Clique em gráfico de barras empilhadas e adicione os campos de Produto da tabela Produtos e Valor de Nota da tabela Vendas. Esta visualização virá com muitos valores, filtraremos os 10 maiores:
+Adicione uma visualização de "Gráfico de Barras Empilhadas" e coloque os campos de Produto da tabela Produtos e Valor de Nota da tabela Vendas. Esta visualização virá com muitos valores, filtraremos os 10 maiores:
 
 Ranking top 10:
 
