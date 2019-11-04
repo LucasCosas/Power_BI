@@ -12,7 +12,7 @@ Verifique na aba Configurações Regionais se o idioma está em Português Brasileir
 
 ![GetConfigreg.](./images/configreg.png)
 
-## Get Data (Obter Dados)
+# Parte 1 - Obter Dados
 
 Para o workshop, primeiramente navegue até o link abaixo
 https://github.com/LucasCosas/Power_BI/blob/master/Demo%20Excel/file/Dados.xlsx
@@ -47,7 +47,7 @@ Clique em "Transformar Dados" após selecionar as tabelas acima.
 
 Caso as tabelas já estejam carregadas, pode-se ir ao menu de edições clicando em Editar Consultas do menu superior na página principal do Power BI
 
-# Edit Queries (Editar Consultas)
+# Parte 2 - Edit Queries (Editar Consultas)
 
 Editar Consultas é o lugar onde você fará as edições nas tabelas que serão feitas as cargas para o modelo do Power BI. É importante fazer as modificações necessárias antes da criaçao das visualizações.
 
@@ -91,7 +91,7 @@ Volte para a Aba "Página Inicial" no menu superior e clique em "Fechar e Aplicar
 Isso fará com que as Mudanças nas Consultas sejam aplicadas no Modelo para visualizações.
 
 
-# Relacionamento das Tabelas
+# Parte 3 - Relacionamento das Tabelas
 
 Na página principal do Power BI, escolha a terceira opção do menu lateral esquerdo, para ver as relações entre as tabelas.
 
@@ -109,7 +109,7 @@ Resultado esperado:
 
 ![relacionamento.](./images/relacionamento.png)
 
-# Measures (medidas) e Hierarquias
+# Parte 4 - Measures (medidas) e Hierarquias
 
 Volte para a primeira opção no menu da esquerda, na aba de visualizações
 
@@ -151,7 +151,7 @@ Faça o mesmo para as seguintes colunas:
 * *País: País/Região*
 
 
-# Visualizações
+# Parte 5 - Visualizações
 
 ## Criar visualização
 
@@ -189,7 +189,7 @@ Exemplo abaixo contendo o filtro de ranking e algumas visualizações possíveis
 
 ![top10.](./images/top10.png)
 
-# Publicação e compartilhamento
+# Parte 6 - Publicação e compartilhamento
 
 Após criar as visualizações, clique em "Publicar" no menu inicial do Power BI
 
@@ -205,7 +205,7 @@ Na opção "Arquivo" podemos compartilhar este relatório na web ou SharePoint. Na 
 
 Abra o Teams na aba de teams. Escolha um time que gostaria de compartilhar o relatório criado e clique no sinal "+". Procure por Power BI na área de adicionar uma aba.	 Selecione o espaço de trabalho em que o relatório foi publicado e selecione-o.
 
-# Atualizando o relatório
+# Parte 7 - Atualizando o relatório
 
 Por fim, para atualizar o relatório no site do Power BI, podemos navegar até o espaço de trabalho, na área esquerda, procurar por Data Sources/Conjuntos de Dados, clicar na reticências ao lado do conjunto de dados e clicar em "Atualizar Agora".
 
