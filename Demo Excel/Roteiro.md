@@ -214,3 +214,7 @@ Note que este passo só funcionará se o arquivo utilizado estiver em algum serviç
 ![refresh.](./images/refresh.png)
 
 A partir daí, o céu é o limite.
+
+## Azure
+
+http://aka.ms/azurestudent
